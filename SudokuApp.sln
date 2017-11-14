@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "SudokuApp", "SudokuApp\SudokuApp.jsproj", "{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Android = Debug|Android
+		Debug|iOS = Debug|iOS
+		Debug|Windows-ARM = Debug|Windows-ARM
+		Debug|Windows-x64 = Debug|Windows-x64
+		Debug|Windows-x86 = Debug|Windows-x86
+		Release|Android = Release|Android
+		Release|iOS = Release|iOS
+		Release|Windows-ARM = Release|Windows-ARM
+		Release|Windows-x64 = Release|Windows-x64
+		Release|Windows-x86 = Release|Windows-x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Debug|Android.ActiveCfg = Debug|Android
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Debug|Android.Build.0 = Debug|Android
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Debug|Android.Deploy.0 = Debug|Android
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Debug|iOS.ActiveCfg = Debug|iOS
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Debug|iOS.Build.0 = Debug|iOS
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Debug|iOS.Deploy.0 = Debug|iOS
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Debug|Windows-ARM.ActiveCfg = Debug|Windows-ARM
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Debug|Windows-ARM.Build.0 = Debug|Windows-ARM
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Debug|Windows-ARM.Deploy.0 = Debug|Windows-ARM
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Debug|Windows-x64.ActiveCfg = Debug|Windows-x64
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Debug|Windows-x64.Build.0 = Debug|Windows-x64
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Debug|Windows-x64.Deploy.0 = Debug|Windows-x64
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Debug|Windows-x86.ActiveCfg = Debug|Windows-x86
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Debug|Windows-x86.Build.0 = Debug|Windows-x86
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Debug|Windows-x86.Deploy.0 = Debug|Windows-x86
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Release|Android.ActiveCfg = Release|Android
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Release|Android.Build.0 = Release|Android
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Release|Android.Deploy.0 = Release|Android
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Release|iOS.ActiveCfg = Release|iOS
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Release|iOS.Build.0 = Release|iOS
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Release|iOS.Deploy.0 = Release|iOS
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Release|Windows-ARM.ActiveCfg = Release|Windows-ARM
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Release|Windows-ARM.Build.0 = Release|Windows-ARM
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Release|Windows-ARM.Deploy.0 = Release|Windows-ARM
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Release|Windows-x64.ActiveCfg = Release|Windows-x64
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Release|Windows-x64.Build.0 = Release|Windows-x64
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Release|Windows-x64.Deploy.0 = Release|Windows-x64
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Release|Windows-x86.ActiveCfg = Release|Windows-x86
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Release|Windows-x86.Build.0 = Release|Windows-x86
+		{FE4A73F6-09A2-4828-9748-83AE38CA4E8A}.Release|Windows-x86.Deploy.0 = Release|Windows-x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0758CC83-FA46-4637-B9B0-DA4CA42C1DE1}
+	EndGlobalSection
+EndGlobal
