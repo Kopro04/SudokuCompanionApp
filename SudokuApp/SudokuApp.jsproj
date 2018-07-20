@@ -74,7 +74,7 @@
   </Target>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties project_1json__JSONSchema="http://www.asp.net/media/4878834/project.json" />
+      <UserProperties />
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
@@ -85,8 +85,18 @@
     <Content Include="**\**" Exclude="**\platforms\**;**\bin\**;**\bld\**;**\node_modules\**;**\simulation\**;**\plugins\**;.gitignore;SudokuApp.*" />
   </ItemGroup>
   <ItemGroup>
+    <Content Remove=".bin\node.cmd" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Update="config.xml">
       <SubType>Designer</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".bin\node.cmd" />
   </ItemGroup>
 </Project>
