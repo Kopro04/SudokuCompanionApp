@@ -1,0 +1,61 @@
+﻿body {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+#title {
+    margin-top: 2vh;
+    width: 90vw;
+    height: 10vh;
+    text-align: center;
+}
+
+#puzzleMenu {
+    width: 94vw;
+    height: 86vh;
+    overflow: scroll;
+    margin: 0px 3vw;
+}
+
+    #puzzleMenu div {
+        display: inline-block;
+        width: 96%;
+        background-color: transparent;
+        color: black;
+        padding: 4px;
+    }
+
+        #puzzleMenu div:active {
+            background-color: aliceblue;
+        }
+
+        #puzzleMenu div p{
+            display: inline-block;
+        }
+
+.puzzleID{
+    display: none;
+}
+
+.puzzleName {
+    font-size: xx-large;
+}
+
+.puzzleDate {
+    font-size: small;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+
+.bottom {
+    border-bottom: solid 1px #990000;
+}
+
+.top {
+    border-top: solid 1px #990000;
+}

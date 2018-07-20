@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/submit_puzzle.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+    <title>Sudoku Companion</title>
+</head>
+<body>
+    <div data-role="page" id="body">
+        <img id="title" src="images/submission.png" />
+        <table id="gameboard" cellpadding="0" cellspacing="0">
+            <tr id="row0" class="row">
+                <td id="c00" class="cell quad0 row0 col0"></td>
+                <td id="c01" class="cell quad0 row0 col1"></td>
+                <td id="c02" class="cell quad0 row0 col2"></td>
+                <td id="c03" class="cell quad1 row0 col3"></td>
+                <td id="c04" class="cell quad1 row0 col4"></td>
+                <td id="c05" class="cell quad1 row0 col5"></td>
+                <td id="c06" class="cell quad2 row0 col6"></td>
+                <td id="c07" class="cell quad2 row0 col7"></td>
+                <td id="c08" class="cell quad2 row0 col8"></td>
+            </tr>
+            <tr id="row1" class="row">
+                <td id="c10" class="cell quad0 row1 col0"></td>
+                <td id="c11" class="cell quad0 row1 col1"></td>
+                <td id="c12" class="cell quad0 row1 col2"></td>
+                <td id="c13" class="cell quad1 row1 col3"></td>
+                <td id="c14" class="cell quad1 row1 col4"></td>
+                <td id="c15" class="cell quad1 row1 col5"></td>
+                <td id="c16" class="cell quad2 row1 col6"></td>
+                <td id="c17" class="cell quad2 row1 col7"></td>
+                <td id="c18" class="cell quad2 row1 col8"></td>
+            </tr>
+            <tr id="row2" class="row">
+                <td id="c20" class="cell quad0 row2 col0"></td>
+                <td id="c21" class="cell quad0 row2 col1"></td>
+                <td id="c22" class="cell quad0 row2 col2"></td>
+                <td id="c23" class="cell quad1 row2 col3"></td>
+                <td id="c24" class="cell quad1 row2 col4"></td>
+                <td id="c25" class="cell quad1 row2 col5"></td>
+                <td id="c26" class="cell quad2 row2 col6"></td>
+                <td id="c27" class="cell quad2 row2 col7"></td>
+                <td id="c28" class="cell quad2 row2 col8"></td>
+            </tr>
+            <tr id="row3" class="row">
+                <td id="c30" class="cell quad3 row3 col0"></td>
+                <td id="c31" class="cell quad3 row3 col1"></td>
+                <td id="c32" class="cell quad3 row3 col2"></td>
+                <td id="c33" class="cell quad4 row3 col3"></td>
+                <td id="c34" class="cell quad4 row3 col4"></td>
+                <td id="c35" class="cell quad4 row3 col5"></td>
+                <td id="c36" class="cell quad5 row3 col6"></td>
+                <td id="c37" class="cell quad5 row3 col7"></td>
+                <td id="c38" class="cell quad5 row3 col8"></td>
+            </tr>
+            <tr id="row4" class="row">
+                <td id="c40" class="cell quad3 row4 col0"></td>
+                <td id="c41" class="cell quad3 row4 col1"></td>
+                <td id="c42" class="cell quad3 row4 col2"></td>
+                <td id="c43" class="cell quad4 row4 col3"></td>
+                <td id="c44" class="cell quad4 row4 col4"></td>
+                <td id="c45" class="cell quad4 row4 col5"></td>
+                <td id="c46" class="cell quad5 row4 col6"></td>
+                <td id="c47" class="cell quad5 row4 col7"></td>
+                <td id="c48" class="cell quad5 row4 col8"></td>
+            </tr>
+            <tr id="row5" class="row">
+                <td id="c50" class="cell quad3 row5 col0"></td>
+                <td id="c51" class="cell quad3 row5 col1"></td>
+                <td id="c52" class="cell quad3 row5 col2"></td>
+                <td id="c53" class="cell quad4 row5 col3"></td>
+                <td id="c54" class="cell quad4 row5 col4"></td>
+                <td id="c55" class="cell quad4 row5 col5"></td>
+                <td id="c56" class="cell quad5 row5 col6"></td>
+                <td id="c57" class="cell quad5 row5 col7"></td>
+                <td id="c58" class="cell quad5 row5 col8"></td>
+            </tr>
+            <tr id="row6" class="row">
+                <td id="c60" class="cell quad6 row6 col0"></td>
+                <td id="c61" class="cell quad6 row6 col1"></td>
+                <td id="c62" class="cell quad6 row6 col2"></td>
+                <td id="c63" class="cell quad7 row6 col3"></td>
+                <td id="c64" class="cell quad7 row6 col4"></td>
+                <td id="c65" class="cell quad7 row6 col5"></td>
+                <td id="c66" class="cell quad8 row6 col6"></td>
+                <td id="c67" class="cell quad8 row6 col7"></td>
+                <td id="c68" class="cell quad8 row6 col8"></td>
+            </tr>
+            <tr id="row7" class="row">
+                <td id="c70" class="cell quad6 row7 col0"></td>
+                <td id="c71" class="cell quad6 row7 col1"></td>
+                <td id="c72" class="cell quad6 row7 col2"></td>
+                <td id="c73" class="cell quad7 row7 col3"></td>
+                <td id="c74" class="cell quad7 row7 col4"></td>
+                <td id="c75" class="cell quad7 row7 col5"></td>
+                <td id="c76" class="cell quad8 row7 col6"></td>
+                <td id="c77" class="cell quad8 row7 col7"></td>
+                <td id="c78" class="cell quad8 row7 col8"></td>
+            </tr>
+            <tr id="row8" class="row">
+                <td id="c80" class="cell quad6 row8 col0"></td>
+                <td id="c81" class="cell quad6 row8 col1"></td>
+                <td id="c82" class="cell quad6 row8 col2"></td>
+                <td id="c83" class="cell quad7 row8 col3"></td>
+                <td id="c84" class="cell quad7 row8 col4"></td>
+                <td id="c85" class="cell quad7 row8 col5"></td>
+                <td id="c86" class="cell quad8 row8 col6"></td>
+                <td id="c87" class="cell quad8 row8 col7"></td>
+                <td id="c88" class="cell quad8 row8 col8"></td>
+            </tr>
+        </table>
+        <table id="numPad">
+            <tr>
+                <td>
+                    <button type="button" class="btn numBtn" id="btn1" value="1">1</button>
+                </td>
+                <td>
+                    <button type="button" class="btn numBtn" id="btn2" value="2">2</button>
+                </td>
+                <td>
+                    <button type="button" class="btn numBtn" id="btn3" value="3">3</button>
+                </td>
+                <td>
+                    <button type="button" class="btn numBtn" id="btn4" value="4">4</button>
+                </td>
+                <td>
+                    <button type="button" class="btn numBtn" id="btn5" value="5">5</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="numBtn" id="btn6" value="6">6</button>
+                </td>
+                <td>
+                    <button type="button" class="btn numBtn" id="btn7" value="7">7</button>
+                </td>
+                <td>
+                    <button type="button" class="btn numBtn" id="btn8" value="8">8</button>
+                </td>
+                <td>
+                    <button type="button" class="btn numBtn" id="btn9" value="9">9</button>
+                </td>
+                <td>
+                    <button type="button" class="btn" id="clearBtn" value="Clear">
+                        <img src="css/images/icons-png/delete-black.png" />
+                    </button>
+                </td>
+            </tr>
+        </table>
+        <table id="controlPad">
+            <tr>
+                <td>
+                    <button type="button" class="btn" id="solveBtn" value="Solve Now">Solve Now</button>
+                </td>
+                <td>
+                    <button type="button" class="btn" id="saveBtn" value="Solve Later">Solve Later</button>
+                </td>
+                <td>
+                    <button type="button" class="btn" id="resetBtn" value="Reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="scripts/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="scripts/submit_puzzle.js"></script>
+    <script type="text/javascript" src="scripts/puzzle.js"></script>
+    <script type="text/javascript" src="scripts/sudokuDatabase.js"></script>
+    <script type="text/javascript" src="scripts/solutionGenerator.js"></script>
+    <script type="text/javascript" src="scripts/matrixNode.js"></script>
+    <script type="text/javascript" src="scripts/columnNode.js"></script>
+</body>
+</html>

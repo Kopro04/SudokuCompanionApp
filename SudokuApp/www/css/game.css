@@ -1,0 +1,104 @@
+#body {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+#title {
+    margin-top: 2vh;
+    width: 90vw;
+    height: 10vh;
+    text-align: center;
+}
+
+#timer{
+    margin: 0;
+}
+
+#gameboard {
+    width: 95vw;
+    height: 95vw;
+    text-align: center;
+    border: 2px solid;
+    border-color: darkslategrey;
+    margin: 2.5% 2.5% 2.5% 2.5%;
+    table-layout: fixed;
+    border-collapse:collapse;
+}
+
+.quad0, .quad2, .quad4, .quad6, .quad8 {
+    background-color: aliceblue;
+}
+
+.quad1, .quad3, .quad5, .quad7 {
+    background-color: lightgray;
+}
+
+.cell {
+    border: 1px solid;
+    border-color: darkslategrey;
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    font-size: 20px;
+    color: blue;
+}
+
+.row2, .row5 {
+    border-bottom: 2px solid;
+    border-color: darkslategrey;
+}
+
+.col2, .col5 {
+    border-right: 2px solid;
+    border-color: darkslategrey;
+}
+
+.clue {
+    font-weight: bold;
+    color: black;
+}
+
+#keypad {
+    margin: 2.5% 5%;
+    width: 90vw;
+    text-align: center;
+}
+
+.highlight {
+    background-color: lightblue;
+}
+
+.match{
+    background-color: aqua;
+}
+
+.error{
+    background-color: #ff6666;
+}
+
+.note{
+    font-size: 8px;
+}
+
+.noteTable{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.noteRow{
+    width: 100%;
+    height: 33.33333%;
+}
+
+.noteCell{
+    width: 33.33333%;
+    height: 33.33333%;
+    padding: 0;
+    margin: 0;
+}

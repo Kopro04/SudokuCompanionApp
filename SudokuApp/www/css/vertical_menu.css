@@ -1,0 +1,43 @@
+﻿body {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+#verticalMenu {
+    width: 90%;
+    margin: 5% 5% 5% 5%;
+}
+
+#verticalMenu div {
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+}
+
+#verticalMenu div:active{
+    background-color: aliceblue;
+}
+
+#verticalMenu a{
+    font-size: xx-large;
+    text-decoration: none;
+    color: black;
+}
+
+#title {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 85vw;
+}
+
+#selectPuzzle, #submitPuzzle {
+    border-bottom: solid 1px #990000;
+}
+
+#submitPuzzle, #autosolve {
+    border-top: solid 1px #990000;
+}
